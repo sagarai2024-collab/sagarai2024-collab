@@ -6,19 +6,54 @@ Six years across banking, OTT/DTH, real estate and healthcare clients, most rece
 
 ## AI stack
 
-- **Models:** Azure OpenAI (GPT-4o, GPT-4o-mini), Google Gemini, OpenAI and Gemini embedding models
-- **Orchestration:** Microsoft Semantic Kernel, tool calling, agents, MCP
-- **Retrieval:** RAG, vector embeddings and cosine similarity, Supabase (PostgreSQL + pgvector) with an HNSW index, keyword fallback
-- **Around the model:** prompt engineering, grounded answers that refuse when the knowledge base has nothing, chat analytics with topic detection, response caching
-- **Built with:** Claude Code, GitHub Copilot and ChatGPT for coding, review, debugging and documentation
+![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-24292F?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge&logo=openai&logoColor=white)
+![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-0078D4?style=for-the-badge)
+![GPT-4o](https://img.shields.io/badge/GPT--4o-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+![OpenAI Embeddings](https://img.shields.io/badge/OpenAI%20Embeddings-5A2D82?style=for-the-badge&logo=openai&logoColor=white)
+![Semantic Kernel](https://img.shields.io/badge/Semantic%20Kernel-512BD4?style=for-the-badge)
+![RAG](https://img.shields.io/badge/RAG-6E40C9?style=for-the-badge)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-111111?style=for-the-badge)
+![Tool Calling](https://img.shields.io/badge/Tool%20Calling-E8505B?style=for-the-badge)
+![Agents](https://img.shields.io/badge/Agents-F59E0B?style=for-the-badge)
+![.NET 9](https://img.shields.io/badge/.NET%209-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge)
+![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-0078D7?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ## Building with AI
 
-- At DishTV I built a consumer portal chatbot on Semantic Kernel and Azure OpenAI that answers subscriber questions from a SQL Server knowledge base. Intent routing, a one-hour response cache and lighter queries cut its AI API cost by ~90%.
-- Every conversation is logged with its topic, which feeds an admin dashboard of what subscribers ask most. Admins edit the knowledge base and answers change within seconds, with no redeploy.
-- [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) is a clean-room rebuild of that design you can run yourself. [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) moves the vectors into Supabase pgvector and can switch between Gemini and OpenAI.
+How a support question becomes a grounded answer, and how the system stays cheap and current once it is live.
 
-Three rules carry across all of it. The model answers only from retrieved articles and says so when it finds nothing. The cheap path runs first: greetings never reach the model, and repeat questions come from cache. Any edit to the knowledge base clears the cache, so nobody is served a stale answer.
+```mermaid
+flowchart LR
+  subgraph Define
+    A["Write the knowledge-base articles"] --> B["Set a relevance threshold"]
+  end
+  subgraph Answer
+    C["Fast path: greetings never reach the model"] --> D["One-hour response cache"]
+    D --> E["Embed and retrieve top 3 by cosine similarity"]
+    E --> F["Grounded prompt: answer only from these articles"]
+    F --> G["Answer with sources, or decline"]
+  end
+  subgraph Improve
+    H["Log every question with its topic"] --> I["Dashboard of most-asked topics"]
+    I --> J["Edit an article; cache clears in seconds"]
+  end
+  B --> C
+  G --> H
+  J -.-> E
+```
+
+- **In production at DishTV:** a consumer portal chatbot on Semantic Kernel and Azure OpenAI (GPT-4o-mini), answering subscriber questions from a SQL Server knowledge base. Intent routing, the response cache and lighter queries cut its AI API cost by ~90%.
+- **Run it yourself:** [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) is a clean-room rebuild of that design. [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) moves the vectors into Supabase pgvector behind an HNSW index and switches between Gemini and OpenAI.
+- **What I hold to:** the model answers only from retrieved articles and says so when it finds nothing; the cheap path runs first; any knowledge-base edit clears the cache, so nobody gets a stale answer.
 
 ## Worth opening
 
