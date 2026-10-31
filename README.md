@@ -68,6 +68,7 @@ flowchart LR
 
 **Code** is runnable source: the .NET repos run with `dotnet run`, the Python one with `pip install -r requirements.txt`. **Write-up** is a design document (HLD, LLD, diagram) for client work whose code I can't publish.
 
+- [Container microservices blueprint](https://github.com/sagarai2024-collab/CTB--BANK) **Code.** Reference design for moving an app onto containers: nginx gateway, accounts and ledger services in .NET 9, multi stage non root Docker images, a compose stack, and a GitHub Actions pipeline with tests, Trivy scan, smoke test and a gated deploy.
 - [FluentMind-plugin](https://github.com/sagarai2024-collab/FluentMind-plugin) **Code.** A Claude Code plugin that rewrites AI-shaped prose back into the writer's voice with every fact, number and citation intact, working from a catalogue of 21 named patterns. It exists because the tells are easy to name and hard to see in your own draft.
 - [Resume-optimiser-plugin](https://github.com/sagarai2024-collab/Resume-optimiser-plugin) **Code.** The Resume optimiser discipline pointed at resumes, LinkedIn profiles and READMEs: two tests per line, no invented numbers, and an output gate so the rewrite does not read as generated.
 - [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) **Code.** RAG support chatbot in .NET 9 with a fast-path router, one-hour cache, live knowledge-base edits and an offline mode that needs no keys.
