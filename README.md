@@ -57,11 +57,12 @@ flowchart LR
 
 ## Worth opening
 
-**Code** runs with `dotnet run`. **Case study** is a design write-up (HLD, LLD, diagram) for client work whose code I can't publish.
+**Code** is runnable source: the .NET repos run with `dotnet run`, the Python one with `pip install -r requirements.txt`. **Case study** is a design write-up (HLD, LLD, diagram) for client work whose code I can't publish.
 
 - [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) **Code.** RAG support chatbot in .NET 9 with a fast-path router, one-hour cache, live knowledge-base edits and an offline mode that needs no keys.
 - [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) **Code.** DTH self-care portal (React 19, ASP.NET Core 9, EF Core 9): plans, expiry, itemized GST billing, KYC upload, and a RAG assistant on Supabase pgvector.
 - [notification-api](https://github.com/sagarai2024-collab/notification-api) **Code.** Email notification service where parallel workers cannot claim the same row, duplicates collapse under `sp_getapplock`, and failed sends retry with back-off. 58 tests.
+- [image-vector-search](https://github.com/sagarai2024-collab/image-vector-search) **Code.** Semantic photo search in Python: describe a picture in English or upload one, and CLIP embeddings stored in Qdrant Cloud return the closest matches with a similarity score. The model runs locally (no paid API), with a CLI and a Streamlit UI.
 - [Movie on Demand](https://github.com/sagarai2024-collab/project-case-studies/tree/main/movie-on-demand) **Case study.** OTT catalogue and slot booking at DishTV, synced across DishTV and D2H with Azure Functions, images in Blob Storage.
 - [MDM master data](https://github.com/sagarai2024-collab/project-case-studies/tree/main/mdm-master-data) **Case study.** Supplier and customer onboarding with approval workflow, synced to SAP through Dell Boomi and Ariba, for four global regions.
 - [NPI-FMRS](https://github.com/sagarai2024-collab/project-case-studies/tree/main/npi-fmrs) **Case study.** Property inspection platform for a US client, with owner, inspector and bidding modules on a four-layer clean architecture.
