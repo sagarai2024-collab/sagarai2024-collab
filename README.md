@@ -1,6 +1,6 @@
 # Sagarika Chakraborty
 
-Technical lead and full stack .NET engineer in Bangalore. I build C#, ASP.NET Core, React and SQL Server systems, and I have put retrieval augmented generation into production.
+Technical lead and full stack .NET engineer in Bangalore. I build C#, ASP.NET Core, React and SQL Server systems, and semantic search in Python on the Qdrant vector database. I have put retrieval augmented generation into production.
 
 Six years across banking, OTT/DTH, real estate and healthcare clients, most recently a server migration for a Swiss bank at Wipro and a subscriber platform at DishTV. Outside engineering, I wrote The Journey of a Mother, the memoir behind the film Mrs. Chatterjee vs Norway.
 
