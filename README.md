@@ -61,25 +61,25 @@ flowchart LR
 
 ## Worth opening
 
-**Code** is runnable source: the .NET repos run with `dotnet run`, the Python one with `pip install -r requirements.txt`. **Case study** is a design write-up (HLD, LLD, diagram) for client work whose code I can't publish.
+**Code** is runnable source: the .NET repos run with `dotnet run`, the Python one with `pip install -r requirements.txt`. **Write-up** is a design document (HLD, LLD, diagram) for client work whose code I can't publish.
 
 - [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) **Code.** RAG support chatbot in .NET 9 with a fast-path router, one-hour cache, live knowledge-base edits and an offline mode that needs no keys.
 - [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) **Code.** DTH self-care portal (React 19, ASP.NET Core 9, EF Core 9): plans, expiry, itemized GST billing, KYC upload, and a RAG assistant on Supabase pgvector.
 - [notification-api](https://github.com/sagarai2024-collab/notification-api) **Code.** Email notification service where parallel workers cannot claim the same row, duplicates collapse under `sp_getapplock`, and failed sends retry with back-off. 58 tests.
 - [image-vector-search](https://github.com/sagarai2024-collab/image-vector-search) **Code.** Semantic photo search in Python: describe a picture in English or upload one, and CLIP embeddings stored in Qdrant Cloud return the closest matches with a similarity score. The model runs locally (no paid API), with a CLI and a Streamlit UI.
-- [Movie on Demand](https://github.com/sagarai2024-collab/project-case-studies/tree/main/movie-on-demand) **Case study.** OTT catalogue and slot booking at DishTV, synced across DishTV and D2H with Azure Functions, images in Blob Storage.
-- [MDM master data](https://github.com/sagarai2024-collab/project-case-studies/tree/main/mdm-master-data) **Case study.** Supplier and customer onboarding with approval workflow, synced to SAP through Dell Boomi and Ariba, for four global regions.
-- [NPI-FMRS](https://github.com/sagarai2024-collab/project-case-studies/tree/main/npi-fmrs) **Case study.** Property inspection platform for a US client, with owner, inspector and bidding modules on a four-layer clean architecture.
-- [EIS Americas FMRS](https://github.com/sagarai2024-collab/project-case-studies/tree/main/eis-americas-fmrs) **Case study.** Equipment installation jobs for contractors and installers, tracked from assignment to review with before and after photos.
-- [WCDP workforce](https://github.com/sagarai2024-collab/project-case-studies/tree/main/wcdp-workforce) **Case study.** Xamarin timesheet and task apps for Android, iOS and Windows, with offline sync.
-- [DevOps automation](https://github.com/sagarai2024-collab/project-case-studies/tree/main/devops-automation) **Case study.** Azure DevOps YAML pipelines with PIM approval gates and staging to production slot swaps.
-- [GTPL Cable](https://github.com/sagarai2024-collab/project-case-studies/tree/main/gtpl-cable) **Case study.** Cable TV subscriber portal with plans, online recharge and RDLC billing reports.
-- [CSIWB membership](https://github.com/sagarai2024-collab/project-case-studies/tree/main/csiwb-membership) **Case study.** Membership lifecycle and newsletters for a cardiology society.
-- [Sudarshan student portal](https://github.com/sagarai2024-collab/project-case-studies/tree/main/sudarshan-student-portal) **Case study.** Student registration, online fees and study material access.
-- [Gyrate Netcom](https://github.com/sagarai2024-collab/project-case-studies/tree/main/gyrate-netcom) **Case study.** Online grocery store on ASP.NET MVC 5: catalogue, cart, checkout and order tracking.
-- [Smart Visa](https://github.com/sagarai2024-collab/project-case-studies/tree/main/smart-visa) **Case study.** Visa application portal on DNN with Telerik, from my 2018 internship.
+- [Movie on Demand](https://github.com/sagarai2024-collab/project-case-studies/tree/main/movie-on-demand) **Write-up.** OTT catalogue and slot booking at DishTV, synced across DishTV and D2H with Azure Functions, images in Blob Storage.
+- [MDM master data](https://github.com/sagarai2024-collab/project-case-studies/tree/main/mdm-master-data) **Write-up.** Supplier and customer onboarding with approval workflow, synced to SAP through Dell Boomi and Ariba, for four global regions.
+- [NPI-FMRS](https://github.com/sagarai2024-collab/project-case-studies/tree/main/npi-fmrs) **Write-up.** Property inspection platform for a US client, with owner, inspector and bidding modules on a four-layer clean architecture.
+- [EIS Americas FMRS](https://github.com/sagarai2024-collab/project-case-studies/tree/main/eis-americas-fmrs) **Write-up.** Equipment installation jobs for contractors and installers, tracked from assignment to review with before and after photos.
+- [WCDP workforce](https://github.com/sagarai2024-collab/project-case-studies/tree/main/wcdp-workforce) **Write-up.** Xamarin timesheet and task apps for Android, iOS and Windows, with offline sync.
+- [DevOps automation](https://github.com/sagarai2024-collab/project-case-studies/tree/main/devops-automation) **Write-up.** Azure DevOps YAML pipelines with PIM approval gates and staging to production slot swaps.
+- [GTPL Cable](https://github.com/sagarai2024-collab/project-case-studies/tree/main/gtpl-cable) **Write-up.** Cable TV subscriber portal with plans, online recharge and RDLC billing reports.
+- [CSIWB membership](https://github.com/sagarai2024-collab/project-case-studies/tree/main/csiwb-membership) **Write-up.** Membership lifecycle and newsletters for a cardiology society.
+- [Sudarshan student portal](https://github.com/sagarai2024-collab/project-case-studies/tree/main/sudarshan-student-portal) **Write-up.** Student registration, online fees and study material access.
+- [Gyrate Netcom](https://github.com/sagarai2024-collab/project-case-studies/tree/main/gyrate-netcom) **Write-up.** Online grocery store on ASP.NET MVC 5: catalogue, cart, checkout and order tracking.
+- [Smart Visa](https://github.com/sagarai2024-collab/project-case-studies/tree/main/smart-visa) **Write-up.** Visa application portal on DNN with Telerik, from my 2018 internship.
 
-All case studies are indexed in [project-case-studies](https://github.com/sagarai2024-collab/project-case-studies).
+All write-ups are indexed in [project-case-studies](https://github.com/sagarai2024-collab/project-case-studies).
 
 ## Elsewhere
 
