@@ -56,7 +56,7 @@ flowchart LR
 ```
 
 - **In production at DishTV:** a consumer portal chatbot on Semantic Kernel and Azure OpenAI (GPT-4o-mini), answering subscriber questions from a SQL Server knowledge base. Intent routing, the response cache and lighter queries cut its AI API cost by ~90%.
-- **Run it yourself:** [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) is a clean-room rebuild of that design. [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) moves the vectors into Supabase pgvector behind an HNSW index and switches between Gemini and OpenAI.
+- **Run it yourself:** [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) is a clean-room rebuild of that design. [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) moves the vectors into Supabase pgvector behind an HNSW index and switches between Gemini and OpenAI. [image-vector-search](https://github.com/sagarai2024-collab/image-vector-search) does semantic photo search in Python, with CLIP embeddings stored in the Qdrant vector database. [FluentMind-plugin](https://github.com/sagarai2024-collab/FluentMind-plugin) and [Resume-optimiser-plugin](https://github.com/sagarai2024-collab/Resume-optimiser-plugin) are Claude Code plugins that rewrite AI-shaped prose in your own voice and tighten resumes, LinkedIn profiles and READMEs.
 - **What I hold to:** the model answers only from retrieved articles and says so when it finds nothing; the cheap path runs first; any knowledge-base edit clears the cache, so nobody gets a stale answer.
 
 ## Worth opening
