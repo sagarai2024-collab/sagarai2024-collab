@@ -67,8 +67,9 @@ flowchart LR
 
 ## Worth opening
 
-**Code** is runnable source: the .NET repos run with `dotnet run`, the Python one with `pip install -r requirements.txt`. **Write-up** is a design document (HLD, LLD, diagram) for client work whose code I can't publish.
+**Code** is runnable source: the .NET repos run with `dotnet run`, the Python ones with `pip install -r requirements.txt`. **Write-up** is a design document (HLD, LLD, diagram) for client work whose code I can't publish.
 
+- [Resume Tailor](https://github.com/sagarai2024-collab/resume-tailor) **Code.** A resume builder (FastAPI, React) for any role and level: pick one of 8 designs and 13 colour themes, then download PDF, Word or plain text. Every rewritten line is checked so it cannot add a number, tool or award the original did not have, and a free ATS check with no AI call shows whether a parser can read the page back. 222 tests.
 - [Container microservices blueprint](https://github.com/sagarai2024-collab/CTB--BANK) **Code.** Reference design for moving an app onto containers: nginx gateway, accounts and ledger services in .NET 9, multi stage non root Docker images, a compose stack, and a GitHub Actions pipeline with tests, Trivy scan, smoke test and a gated deploy.
 - [FluentMind-plugin](https://github.com/sagarai2024-collab/FluentMind-plugin) **Code.** A Claude Code plugin that rewrites AI-shaped prose back into the writer's voice with every fact, number and citation intact, working from a catalogue of 21 named patterns. It exists because the tells are easy to name and hard to see in your own draft.
 - [Resume-optimiser-plugin](https://github.com/sagarai2024-collab/Resume-optimiser-plugin) **Code.** The Resume optimiser discipline pointed at resumes, LinkedIn profiles and READMEs: two tests per line, no invented numbers, and an output gate so the rewrite does not read as generated.
