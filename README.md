@@ -57,8 +57,6 @@ flowchart LR
 
 - **In production at DishTV:** a consumer portal chatbot on Semantic Kernel and Azure OpenAI (GPT-4o-mini), answering subscriber questions from a SQL Server knowledge base. Intent routing, the response cache and lighter queries cut its AI API cost by ~90%.
 - **Run it yourself:**
-  - [ConsumerChatbot](https://github.com/sagarai2024-collab/ConsumerChatbot) is a clean-room rebuild of that design in .NET 9.
-  - [Phoenix-Watcho](https://github.com/sagarai2024-collab/Phoenix-Watcho) moves the vectors into Supabase pgvector behind an HNSW index and switches between Gemini and OpenAI.
   - [image-vector-search](https://github.com/sagarai2024-collab/image-vector-search) is semantic photo search in Python: CLIP embeddings stored in Qdrant, with a CLI and a Streamlit UI.
   - [FluentMind-plugin](https://github.com/sagarai2024-collab/FluentMind-plugin) rewrites AI-shaped prose back into your own voice, keeping every fact and number.
   - [Resume-optimiser-plugin](https://github.com/sagarai2024-collab/Resume-optimiser-plugin) tightens resumes, LinkedIn profiles and READMEs without inventing numbers.
